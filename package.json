@@ -1,0 +1,14 @@
+{
+  "name": "workflows-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "t7yang <t7yang@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
