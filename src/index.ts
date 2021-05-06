@@ -9,4 +9,8 @@ export class Foo {
   baz() {
     return this.name + 'cool!!!';
   }
+
+  foo() {
+    console.log('this is self method!!');
+  }
 }
