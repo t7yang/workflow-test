@@ -5,4 +5,8 @@ export class Foo {
     console.log(this.name);
     return this.name;
   }
+
+  baz() {
+    return this.name + 'cool!!!';
+  }
 }
