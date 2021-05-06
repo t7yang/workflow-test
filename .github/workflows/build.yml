@@ -1,4 +1,4 @@
-name: upload artifacts
+name: Release build
 
 on:
   push:
@@ -34,9 +34,12 @@ jobs:
       - name: Build project
         run: yarn build
 
+      - name: Compress dist
+        run: tar -cf dist.tar dist/*
+
       - name: Publish release
         uses: softprops/action-gh-release@v1
         with:
-          files: dist/*
+          files: dist.tar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
